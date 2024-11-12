@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
 /*!
@@ -11107,4 +11107,88 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.rounded-photo {
+  width: 200px; /* Ajusta el tamaño según lo necesites */
+  height: 200px; /* Ajusta el tamaño según lo necesites */
+  border-radius: 50%; /* Hace la imagen completamente redonda */
+  object-fit: cover; /* Asegura que la imagen mantenga proporciones dentro del círculo */
+  /*border: 3px solid #4CAF50; /* Opcional: agrega un borde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra */
+  margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.custom-btn {
+  background-color: var(--bs-link-hover-color); /* Cambia el color del fondo */
+  color: white; /* Color del texto */
+  font-size: 18px; /* Tamaño del texto */
+  padding: 12px 30px; /* Espaciado interno */
+  border-radius: 30px; /* Bordes redondeados */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.custom-btn:hover {
+  background-color: var(--bs-link-color); /* Color de fondo al pasar el mouse */
+  transform: scale(1.05); /* Agranda el botón ligeramente */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.custom-btn:active {
+  transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+.custom-heading {
+  color: var(--bs-link-hover-color); /* Cambia el color del texto (verde) */
+  font-size: 32px; /* Aumenta el tamaño de la letra */
+  font-weight: bold; /* Hace que el texto sea más grueso */
+  text-align: center; /* Centra el texto opcionalmente */
+  margin-top: 20px; /* Añade espacio superior */
+}
+
+.portfolio-item img {
+  width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+  height: 300px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen para llenar el espacio sin distorsionarla */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para un diseño más elegante */
+}
+
+.portfolio-item:hover img {
+  filter: brightness(85%); /* Oscurece ligeramente al pasar el mouse */
+  transition: all 0.3s ease;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
 }
